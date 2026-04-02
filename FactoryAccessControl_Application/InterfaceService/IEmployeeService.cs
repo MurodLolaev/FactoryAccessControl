@@ -14,7 +14,7 @@ namespace FactoryAccessControl.Application.InterfaceService
         Task<IEnumerable<EmployeeDto>> GetAllEmployeesAsync(Position? position = null);
         Task<IEnumerable<Position>> GetAllPositionsAsync();
 
-        //  метод для бонуса
+        //  метод для получение количество замечание
         Task<IEnumerable<EmployeeViolationDto>> GetMonthlyViolationsAsync(int year, int month);
     }
 }

@@ -66,6 +66,7 @@ namespace FactoryAccessControl.API.Controllers
             return Ok(positions);
         }
 
+        // Получение количествие всех замечание течение месяц в определёный год 
         [HttpGet("violations")]
         public async Task<IActionResult> GetMonthlyViolations([FromQuery] int year, [FromQuery] int month)
         {
